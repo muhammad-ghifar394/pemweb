@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa | Portal PMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="brand">
+            <div class="brand-logo">P</div>
+            <div class="brand-text">
+                <strong>Portal PMB</strong>
+                <span>PENERIMAAN MAHASISWA BARU</span>
+            </div>
+        </a>
+
+        <span class="header-badge">Pendaftaran Online</span>
+    </header>
+
+    <main class="page-container">
+
+        <section class="intro-section">
+            <p class="eyebrow">PENERIMAAN MAHASISWA BARU</p>
+
+            <h1>
+                Mulai langkah<br>
+                <span>masa depanmu.</span>
+            </h1>
+
+            <p class="intro-description">
+                Lengkapi formulir pendaftaran calon mahasiswa di bawah ini.
+                Pastikan informasi yang dimasukkan sudah benar dan lengkap.
+            </p>
+
+            <div class="info-card">
+                <span class="check-icon">✓</span>
+                <p>Isi formulir dengan lengkap dan teliti.</p>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FORMULIR 01</p>
+                    <h2>Data Pendaftar</h2>
+                </div>
+
+                <span class="step-badge">01 / 02</span>
+            </div>
+
+            <p class="form-description">
+                Kolom bertanda <span class="required">*</span> wajib diisi.
+            </p>
+
+            <!-- Formulir menggunakan metode GET -->
+            <form action="detail.html" method="get">
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+                        <label for="nama">
+                            Nama Lengkap <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nama"
+                            name="nama"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomor">
+                            Nomor Pendaftaran <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nomor"
+                            name="nomor"
+                            placeholder="Contoh: PMB2026001"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Alamat Email <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telepon">Nomor Telepon</label>
+
+                        <input
+                            type="tel"
+                            id="telepon"
+                            name="telepon"
+                            placeholder="08xxxxxxxxxx"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Lahir</label>
+
+                        <input
+                            type="date"
+                            id="tanggal"
+                            name="tanggal_lahir"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="program-studi">
+                            Program Studi <span class="required">*</span>
+                        </label>
+
+                        <select
+                            id="program-studi"
+                            name="program_studi"
+                            required
+                        >
+                            <option value="">Pilih program studi</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Teknik Sipil">Teknik Sipil</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jalur">
+                            Jalur Pendaftaran <span class="required">*</span>
+                        </label>
+
+                        <select id="jalur" name="jalur" required>
+                            <option value="">Pilih jalur pendaftaran</option>
+                            <option value="Reguler">Reguler</option>
+                            <option value="Prestasi">Prestasi</option>
+                            <option value="Mandiri">Mandiri</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="alamat">Alamat Domisili</label>
+
+                        <textarea
+                            id="alamat"
+                            name="alamat"
+                            rows="4"
+                            placeholder="Masukkan alamat domisili"
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-footer">
+                    <p>Pastikan data sudah benar sebelum melanjutkan.</p>
+
+                    <button type="submit" class="submit-button">
+                        Lihat Detail Pendaftaran
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Portal PMB</p>
+        <p>Tugas Individu 3 · Pengembangan Aplikasi Web</p>
+    </footer>
+
+</body>
+</html>
